@@ -1,14 +1,213 @@
-h3{
-    color: rgb(4, 4, 3,1);
-    font-family: Verdana;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #f7ce3e;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+h1{
+    color: #f7ce3e;
+    margin: 0;
+    font-weight: bold;
+}
+
+nav{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    font-family: Verdana;
+    height: 8vh;
+    background-color: #0a1612;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
     
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: #f7ce3e;
+    margin: 8px;
+    transition: transform 0.3s ease-in;
+}
+
+@media(max-width:999px){
+    body{
+        overflow-x: hidden;
+       
+    }
+    .nav-list{
+        position:absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: #0a1612;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    
+    }
+    .mobile-menu{
+        display: block;
+    }
+    
+}
+
+.nav-list.active{
+    transform:translateX(0);
+}
+
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1{
+    transform:rotate(-45deg) translate(-8px,8px);
 
 }
-h4,#i1{
+
+.mobile-menu.active .line2{
+    opacity: 0;
+    
+}
+
+.mobile-menu.active .line3{
+    transform:rotate(45deg) translate(-5px,-7px);
+    
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+.f{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 5rem;
+    /* topo | direita | inferior | esquerda */
+    margin: 2rem 2rem 10rem 2rem;
+    
+}
+
+.e{
+    margin: 2rem 2rem 3rem 2rem;
+    padding: 5rem;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+}
+
+h2{
+    margin:1rem;
+}
+
+.section-grey{
+
+    background-color: #c5c1c0;
+    padding: 110px 0 110px 0;
+
+}
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row{
+
+    display: flex;
+    flex-direction: column;
+    margin-right: -15px;
+    margin-left: -15px;
+
+}
+
+.title{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.icones{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0 25rem;
+
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-f{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+
+
+
+#i1{
     font-family: Verdana;
     margin-left: 10px;
     font-weight: bold;
@@ -20,44 +219,23 @@ p{
     text-align: justify;
 
 }
-body{
-    width: 100%;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #0b3954;
-}
 
-.container{
-    background-color: #bfd7ea;
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    flex-direction: column;
-    width: 60%;
-    height:auto;
-}
+
 .foto{
     margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
     width: 50%;
 }
 
 #photo{
-    height: 150px; 
-    width: 150px; 
+    height: 200px; 
+    width: 200px; 
     border-radius: 50%;
 }
 #descricao{
     color: rgb(4, 4, 3,1);
-    font-family: Verdana;
-    margin-top: -20px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
 }
 
 .projetos{
@@ -65,5 +243,19 @@ body{
     width: 80%;
     height:auto;
     border:  2px solid grey;
-    
+    display: flex;
+    flex-direction: column;
 }
+
+footer{
+    height: 5rem;
+    background-color: #1a2930; 
+}
+
+#ft{
+
+    text-align: center;
+    padding: 2rem;
+    color:#f7ce3e;
+}
+

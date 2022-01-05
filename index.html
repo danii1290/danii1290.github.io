@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,29 +9,109 @@
     <link href="/me/views/css/styles.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    
-    <div class="foto">
-    <img id="photo" src="/me/img/IMG_20210501_161820.jpg" alt="me">
-    </div>
-    <h3>Daniela Santos</h3>
+  <header>
+	  <nav>
+				<h1>Daniela Santos</h1>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+					<ul class="nav-list">
+						<li ><a href="/#sobre">Sobre</a></li>
+            <li ><a href="/#skills">Skills</a></li>
+            <li ><a href="/#projetos">Projetos</a></li>
+            <li ><a href="/#contato">Contato</a></li>
+						<li ><a href="https://www.linkedin.com/" title="Conecte ao Linkedin" target="_blank">linkedin</a></li>
+						<li ><a href="https://www.instagram.com/" title="Siga no Instagram" target="_blank">instagram</a></li>
+					</ul>
+		 </nav>
+	</header> 
+  <script src="/me/mobile-navbar.js"></script>
+
+  <section>
+    <div class="col-4 f" id="sobre">
+      <img id="photo" src="/me/img/IMG_20210501_161820.jpg" alt="me">
+
+    <h2>Daniela Santos</h2>
     <div id="descricao">
       Graduanda Ciência da Computação/UFS
     </div>
-    
+  </div>
+
+  <div class="col-8 e">
+    <h2>Sobre</h2>
+  </div>
+
+  </section>
+
+  <section id="skills" class="section-grey">
+    <div class="container">
+      <div class="row">
+        <div class="title">
+          <h2>Skills</h2>
+        </div>
+        <div class="icones">
+          <img src="https://img.icons8.com/ios-filled/50/000000/html-5--v1.png"/>
+          <img src="https://img.icons8.com/ios-filled/50/000000/css3.png"/>
+          <img src="https://img.icons8.com/ios-filled/50/000000/javascript.png"/>
+          <img src="https://img.icons8.com/ios-filled/50/000000/php-logo.png"/>
+          <img src="https://img.icons8.com/ios/50/000000/laravel.png"/>
+          <img src="https://img.icons8.com/ios-filled/50/000000/git.png"/>
+          <img src="https://img.icons8.com/ios-filled/50/000000/react-native.png"/>
+          <img src="https://img.icons8.com/ios/50/000000/java-coffee-cup-logo--v1.png"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="section-white">
+    <div class="container">
+      <div class="row">
+        <div class="title">
+          <h2>Projetos</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contato" class="section-grey">
+    <div class="container">
+      <div class="row">
+        <div class="title">
+          <h2>Contato</h2>
+        </div>
+        <div class="formulario">
+        <form class="form-f" name="contact" method="POST" action="https://formspree.io/f/xvodjgoq" %!(EXTRA string=placeholder)>
+          <div class="form-group form-inline">
+          <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
+          </div>
+          <div class="form-group form-inline">
+          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+          <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-outline-primary px-3 py-2">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div>
     <div class="projetos">
       <h4>Projetos</h4>
       <p id="i1">Jogo Genius</p>
       <p>Data da criação 2016<br><br>Versão em Java para fins acadêmicos do Famoso Jogo Genius lançado em 1980, nesse projeto, o jogador tem que clicar na cor que acende e que toca o som seguindo uma sequência aleatória que é dada pelo algoritmo, ao errar, o jogo é finalizado mostrando a pontuação do jogador.<br>Não disponível para download*</p>
-      <img src="/me/img/genius_tela_principal.png" alt="genius_tela_principal" style="width: 300px; height: 300px; margin-left: 180px; border:  1px solid grey;"><br><br>
-      <img src="/me/img/genius_fim_jogo.png" alt="genius_fim_jogo" style="width: 300px; height: 300px; margin-left: 180px; border:  1px solid grey;">
+      <img id="ft" src="/me/img/genius_tela_principal.png" alt="genius_tela_principal" style="width: 300px; height: 300px; margin-left: 180px; border:  1px solid grey;"><br><br>
+      <img id="ft" src="/me/img/genius_fim_jogo.png" alt="genius_fim_jogo" style="width: 300px; height: 300px; margin-left: 180px; border:  1px solid grey;">
       <p id="i1">Controle de Estoque</p>
       <p>Data da criação 2017<br><br>Controle de Estoque para fins acadêmicos, com buscas simples utilizando o banco de dados PostgreSQL e linguagem Java.<br>Não disponível para download*</p>
-      <img src="/me/img/controlestq.png" alt="genius_fim_jogo" style="width: 550px; height: 300px; margin-left: 40px; margin-top: 10px; margin-bottom: 50px; border:  1px solid grey;">
+      <img id="ft" src="/me/img/controlestq.png" alt="genius_fim_jogo" style="width: 550px; height: 300px; margin-left: 40px; margin-top: 10px; margin-bottom: 50px; border:  1px solid grey;">
 
     </div>
     <footer>
-      <p>&copy; 2021 Daniela Santos</p>
+      <p id="ft">&copy; 2021 Daniela Santos</p>
     </footer>
   
   </div>
