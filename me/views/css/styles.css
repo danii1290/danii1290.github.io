@@ -145,7 +145,15 @@ h2{
 
 .section-grey{
 
-    background-color: #c5c1c0;
+   
+    background-color: #dfd9d7;
+    padding: 110px 0 110px 0;
+
+}
+
+.section-white{
+
+    background-color: #ffffff;
     padding: 110px 0 110px 0;
 
 }
@@ -162,6 +170,7 @@ h2{
 
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-right: -15px;
     margin-left: -15px;
 
@@ -228,8 +237,8 @@ p{
 }
 
 #photo{
-    height: 200px; 
-    width: 200px; 
+    height: 300px; 
+    width: 300px; 
     border-radius: 50%;
 }
 #descricao{
@@ -259,3 +268,40 @@ footer{
     color:#f7ce3e;
 }
 
+.btnC{
+    font-size:15px;
+  font-family:Arial;
+  width:140px;
+  height:50px;
+  border-width:1px;
+  color:#333333;
+  border-color:#ffaa22;
+  font-weight:bold;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+  box-shadow: 0px 1px 0px 0px #fff6af;
+  text-shadow: 0px 1px 0px #ffee66;
+  background:linear-gradient(#ffec64, #ffab23);
+  text-align: center;
+  padding: 10px 20px 10px 20px;;
+}
+
+.btnC:hover{
+    background: linear-gradient(#ffab23, #ffec64);
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h4{
+    font-weight:bold;
+}
+.p{
+    margin-top: 10px;
+
+}
