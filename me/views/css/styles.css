@@ -317,4 +317,7 @@ h4{
       display: flex;
       flex-direction:column;
     }
+    .e{
+        padding: 0;
+    }
   }
