@@ -59,6 +59,21 @@ nav {
     transition: transform 0.3s ease-in;
 }
 
+.icones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 25rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    background-color: #1C1C1C;
+    padding: 10px;
+}
+
 @media(max-width:999px) {
     body {
         overflow-x: hidden;
@@ -91,8 +106,13 @@ nav {
 
     .icones {
         display: flex;
-        justify-content: center;
-        padding: 1rem;
+        flex-direction: column;
+         
+    }
+
+    .p {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -179,7 +199,7 @@ h2 {
 .section-white {
 
     background-color: #ffffff;
-    height: 25rem;
+    height: 30rem;
 
 }
 
@@ -207,15 +227,6 @@ h2 {
     padding-right: 15px;
     padding-left: 15px;
     text-align: center;
-}
-
-.icones {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 25rem;
-
 }
 
 .formulario {
@@ -275,14 +286,21 @@ p {
     font-weight: 500;
 }
 
+@media screen and (max-width: 767px){
+    
+    .section-white {
+        height: 40rem;
+    }
+};
+
 .projetos {
     background-image: url('https://thumbs.dreamstime.com/z/papel-de-parede-do-c%C3%B3digo-bin%C3%A1rio-105099097.jpg');
     width: 80%;
-    height: auto;
+    height:300px;
     border: 2px solid grey;
     display: flex;
     flex-direction: column;
-    opacity: 0;
+    
 }
 
 footer {
@@ -320,15 +338,6 @@ footer {
 
 .btnC:hover {
     background: linear-gradient(#00BFFF, #87CEFA);
-}
-
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    background-color: #1C1C1C;
-   
-
 }
 
 h4 {
