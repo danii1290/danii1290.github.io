@@ -77,7 +77,7 @@ nav {
 @media(max-width:999px) {
     body {
         overflow-x: hidden;
-      
+
     }
 
     .nav-list {
@@ -107,7 +107,7 @@ nav {
     .icones {
         display: flex;
         flex-direction: column;
-         
+
     }
 
     .p {
@@ -250,9 +250,6 @@ h2 {
     align-items: center;
 }
 
-
-
-
 #i1 {
     font-family: Verdana;
     margin-left: 10px;
@@ -286,21 +283,23 @@ p {
     font-weight: 500;
 }
 
-@media screen and (max-width: 767px){
-    
+@media screen and (max-width: 767px) {
+
     .section-white {
         height: 40rem;
     }
-};
+}
+
+;
 
 .projetos {
     background-image: url('https://thumbs.dreamstime.com/z/papel-de-parede-do-c%C3%B3digo-bin%C3%A1rio-105099097.jpg');
     width: 80%;
-    height:300px;
+    height: 300px;
     border: 2px solid grey;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 footer {
